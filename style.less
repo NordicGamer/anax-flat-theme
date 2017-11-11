@@ -1,12 +1,18 @@
-/** 
+/**
 * Anax Flat theme.
 */
-@import url(modules.less);
 
+// Global values DON'T CHANGE THESE ANYWHERE ELSE
+// @backColor: black;
+// @frontColor: #424242;
 
+// Generell
+@backColor: #424242;
+@frontColor: black;
+@hoverColor: #131313;
 
 /** --------------------------------------------------------------
- *  Logo images
+ *  Generell
  */
 .logo-1 {
     position: absolute;
@@ -19,3 +25,25 @@
         vertical-align: bottom;
     }
 }
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: #ccc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #999;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@import url(modules.less);

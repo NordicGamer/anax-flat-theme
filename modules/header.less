@@ -1,0 +1,58 @@
+/** --------------------------------------------------------------
+ *  Header
+ */
+
+// Size of max navbar button
+.rm-max .rm-small .rm-button {
+    font-size: 2em;
+}
+
+@maxButtonFontSize: 2em;
+
+// Style navbar
+.rm-desktop li {
+    background-color: @backColor;
+    border: 2px solid @frontColor;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+@navbarItemBgColor: @frontColor;
+
+// Size each item in the header
+.site-logo-text,
+.navbar2,
+.profile {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.site-header {
+    height: 80px;
+    background-color: @backColor;
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+// Site title
+.site-logo-text {
+    font-size: 2em;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:active {
+        color: #999;
+    }
+}
