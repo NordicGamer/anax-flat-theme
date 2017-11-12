@@ -1,7 +1,7 @@
 Revision history
 ===============================
 
-v0.2.3 (2017-11-11)
+v1.0.0 (2017-11-11)
 -------------------------------
 
 * Start to add modules to existing project.
