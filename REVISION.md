@@ -1,7 +1,12 @@
 Revision history
 ===============================
 
-v1.0.0 (2017-11-11)
+v1.0.1 (2017-11-12)
+-------------------------------
+
+* Changed small things to javascript.
+
+v1.0.0 (2017-11-12)
 -------------------------------
 
 * Start to add modules to existing project.
