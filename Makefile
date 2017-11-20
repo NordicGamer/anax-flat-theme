@@ -39,7 +39,7 @@ VENDORBIN 	= vendor/bin
 NPMBIN		= node_modules/.bin
 
 # LESS and CSS
-LESS 		 	= style.less #style1.less #style2.less
+LESS 		 	= style.less modules.less vgrid.less #style1.less #style2.less
 LESS_MODULES	= modules/
 LESS_OPTIONS 	= --strict-imports --include-path=$(LESS_MODULES)
 CSSLINT_OPTIONS = --quiet
@@ -184,7 +184,23 @@ upgrade-responsive-menu:
 	cp node_modules/desinax-responsive-menu/src/less/responsive-menu.less modules/
 	cp node_modules/desinax-responsive-menu/src/js/responsive-menu.js js/
 
+# target: upgrade-vgrid  - Upgrade LESS module - Vertical grid.
+.PHONY: upgrade-vgrid
+upgrade-vgrid:
+	@$(call HELPTEXT,$@)
+	npm update desinax-vertical-grid
+	cp node_modules/desinax-vertical-grid/less/* modules/
+	cp node_modules/desinax-vertical-grid/img/* ../htdocs/img/grid/
+
+# target: upgrade-tgrid  - Upgrade LESS module - typographic-grid.
+.PHONY: upgrade-tgrid
+upgrade-tgrid:
+	@$(call HELPTEXT,$@)
+	npm update desinax-typographic-grid
+	cp node_modules/desinax-typographic-grid/less/* modules/
+	cp node_modules/desinax-typographic-grid/img/* ../htdocs/img/grid/
+
 # target: upgrade                 - Upgrade external LESS modules.
 .PHONY: upgrade
-upgrade: upgrade-normalize upgrade-responsive-menu
+upgrade: upgrade-normalize upgrade-responsive-menu upgrade-vgrid
 	@$(call HELPTEXT,$@)

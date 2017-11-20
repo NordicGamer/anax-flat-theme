@@ -1,0 +1,144 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/** --------------------------------------------------------------
+ *  Header
+ */
+
+// Size of max navbar button
+.rm-max .rm-small .rm-button {
+    font-size: 2em;
+}
+
+@maxButtonFontSize: 2em;
+
+// Style navbar
+.rm-desktop li {
+    background-color: @backColor;
+    border: 2px solid @frontColor;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+@navbarItemBgColor: @frontColor;
+
+// Size each item in the header
+.logo-1 {
+    position: absolute;
+    top: 70px;
+    left: -140px;
+}
+
+.site-logo-text,
+.navbar2,
+.profile {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.site-logo-text-icon img {
+    vertical-align: bottom;
+}
+
+.site-header {
+    height: 80px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+// Site title
+.site-logo-text {
+    font-size: 2em;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:active {
+        color: #999;
+    }
+}
+
+/** --------------------------------------------------------------
+ *  Footer
+ */
+.byline-image figure {
+    margin: 10px;
+    width: 200px;
+}
+
+.byline-image,
+.byline-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner-wrap-footer {
+    background-color: @backColor;
+}
+
+.footer-column-1,
+.footer-column-3 {
+    padding-left: 10px;
+}
+
+.footer-column-2 {
+    border-left: 2px solid @frontColor;
+    border-right: 2px solid @frontColor;
+    padding-left: 10px;
+}
+
+.site-footer {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-type: none;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+/** --------------------------------------------------------------
+ *  About
+ */
+.aboutImage {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.aboutImage img {
+    background-color: white;
+}
+
+/** --------------------------------------------------------------
+ *  About
+ */
+.meImage {
+    float: left;
+}
+
+.meImage img {
+    display: block;
+    margin: 0 auto;
+    padding-right: 10px;
+}

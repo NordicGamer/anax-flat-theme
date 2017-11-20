@@ -8,24 +8,22 @@
  * the same modules.
  */
 
+ // Generell
+ @backColor: #424242;
+ @frontColor: black;
+
 // Reset, or normalize the browser style
 @import url(normalize.less);
-
-// Basic region structure
-@import url(regions.less);
 
 // Responsive menu
 @import url(responsive-menu.less);
 
-// Header
-@import url(header.less);
+// Page stylings
+@import url(regularpages.less);
 
-// Footer
-@import url(footer.less);
-
-// Different pages
-@import url(index.less);
-@import url(about.less);
+// Basic region structure
+//@import url(regions.less);
+@import url(layout.less);
 
 // Responsive design
 @import url(media-queries.less);
