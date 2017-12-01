@@ -17,7 +17,6 @@
 
     &.inner-wrap-header {
         text-align: center;
-        background-color: @backColor;
         html.vgrid & {
             .showGrid(@gridImage, @gridSize);
         }
@@ -28,10 +27,22 @@
     #vgrid .row();
 }
 
-.outer-wrap-header,
-.outer-wrap-main,
-.outer-wrap-after-main {
+.site-header,
+.flash-wrap,
+.breadcrumb-wrap,
+.next-previous,
+.site-footer {
+    #vgrid .column(12);
+}
+
+.next-previous,
+.article,
+.sidebar-left {
     margin-bottom: @magicNumber;
+}
+
+.sidebar-left {
+    margin-top: @magicNumber;
 }
 
 .site-logo-text {
@@ -39,23 +50,7 @@
 }
 
 .navbar2 {
-    #vgrid .column(8);
-}
-
-.profile {
-    #vgrid .column(1);
-}
-
-.flash-wrap {
-    #vgrid .column(12);
-}
-
-.breadcrumb-wrap {
-    #vgrid .column(12);
-}
-
-.next-previous {
-    #vgrid .column(12);
+    #vgrid .column(9);
 }
 
 .next {
@@ -87,9 +82,8 @@
 }
 
 .byline-wrapper {
-    #vgrid .column(6);
-    #vgrid .push(3);
-    background-color: @backColor;
+    #vgrid .column(8);
+    #vgrid .push(2);
 }
 
 .footer-column {
@@ -97,7 +91,6 @@
 }
 
 .site-footer {
-    #vgrid .column(12);
     text-align: center;
 }
 
@@ -110,18 +103,6 @@ body {
     @opacity: 75%;
     color: black;
 
-    a {
-        color: black;
-
-        &:visited {
-            color: #333;
-        }
-
-        &:active {
-            color: #666;
-        }
-    }
-
     .profile {
         a {
             color: white;
@@ -133,15 +114,6 @@ body {
             &:active {
                 color: #999;
             }
-        }
-    }
-
-    .rm-desktop li {
-        color: white;
-        border: 2px solid white;
-
-        a {
-            background-color: grey;
         }
     }
 

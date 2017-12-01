@@ -18,30 +18,23 @@ figcaption {
 
 @maxButtonFontSize: 2em;
 
-// Style navbar
-.rm-desktop li {
-    background-color: @backColor;
-    border: 2px solid @frontColor;
-
-    a:hover {
-        text-decoration: none;
-    }
-}
-
-@navbarItemBgColor: @frontColor;
-
 // Size each item in the header
 .logo-1 {
     position: absolute;
-    top: 70px;
-    left: -140px;
+    top: 50px;
+    left: 50px;
 }
 
-.site-logo-text,
-.navbar2,
-.profile {
+.navbar2 {
     display: inline-block;
     margin: 0 auto;
+}
+
+.profile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: left;
 }
 
 .site-logo-text-icon img {
@@ -50,7 +43,6 @@ figcaption {
 
 .site-header {
     height: 80px;
-    position: relative;
     display:flex;
     align-items: center;
     padding-bottom: 5px;
@@ -59,19 +51,6 @@ figcaption {
 // Site title
 .site-logo-text {
     font-size: 2em;
-    margin: 0;
-
-    a {
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: white;
-    }
-
-    a:active {
-        color: #999;
-    }
 }
 
 /** --------------------------------------------------------------
@@ -88,18 +67,12 @@ figcaption {
     vertical-align: middle;
 }
 
-.inner-wrap-footer {
-    background-color: @backColor;
-}
-
 .footer-column-1,
 .footer-column-3 {
     padding-left: 10px;
 }
 
 .footer-column-2 {
-    border-left: 2px solid @frontColor;
-    border-right: 2px solid @frontColor;
     padding-left: 10px;
 }
 
@@ -124,10 +97,6 @@ figcaption {
     align-items: center;
     margin: auto;
     margin-left: 10px;
-}
-
-.aboutImage img {
-    background-color: white;
 }
 
 /** --------------------------------------------------------------
