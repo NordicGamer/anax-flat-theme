@@ -1,12 +1,3 @@
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-figcaption {
-    text-align: center;
-}
-
 /** --------------------------------------------------------------
  *  Header
  */
@@ -56,10 +47,13 @@ figcaption {
 /** --------------------------------------------------------------
  *  Footer
  */
-.byline-image figure {
-    margin: 10px;
-    width: 200px;
-}
+ .byline-image {
+     margin: 10px;
+
+     img {
+         border: none;
+     }
+ }
 
 .byline-image,
 .byline-text {
@@ -86,28 +80,4 @@ figcaption {
     li {
         display: inline;
     }
-}
-
-/** --------------------------------------------------------------
- *  About
- */
-.aboutImage {
-    float: right;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-left: 10px;
-}
-
-/** --------------------------------------------------------------
- *  About
- */
-.meImage {
-    float: left;
-}
-
-.meImage img {
-    display: block;
-    margin: 0 auto;
-    padding-right: 10px;
 }

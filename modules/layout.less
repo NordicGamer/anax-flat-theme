@@ -27,6 +27,13 @@
     #vgrid .row();
 }
 
+.breadcrumb-wrap,
+.nex-previous,
+.article {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .site-header,
 .flash-wrap,
 .breadcrumb-wrap,
@@ -37,11 +44,13 @@
 
 .next-previous,
 .article,
-.sidebar-left {
+.sidebar-left,
+.sidebar-right {
     margin-bottom: @magicNumber;
 }
 
-.sidebar-left {
+.sidebar-left,
+.sidebar-right {
     margin-top: @magicNumber;
 }
 
@@ -75,10 +84,12 @@
     #vgrid .push(1);
 }
 
-.has-sidebar-left {
-    &.main {
-        #vgrid .column(9);
-    }
+.main.has-sidebar {
+    #vgrid .column(9);
+}
+
+.main.has-sidebar-right {
+    #vgrid .column(9);
 }
 
 .byline-wrapper {
